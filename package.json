@@ -1,7 +1,8 @@
 {
   "name": "lodash-template-stream",
   "version": "1.0.0",
-  "description": "Compile templates with streams using lodash",
+  "description": "stream templates through lodash",
+  "keywords": ["template", "streams", "lodash", "template streamer", "lodash streams"],
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -13,7 +14,6 @@
     "through2": "^0.6.1"
   },
   "devDependencies": {
-    "assert": "^1.1.2",
     "mocha": "^1.21.4"
   }
 }

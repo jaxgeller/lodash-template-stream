@@ -1,4 +1,3 @@
-var assert = require('assert');
 var fs = require('fs');
 var _ = require('lodash');
 var streamer = require('../');
