@@ -57,6 +57,24 @@ fs.createReadStream('./template.html')
   .pipe(fs.createWriteStream('./compiled.html'));
 ```
 
+```html
+<!-- Compiles to -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>this is my title</title>
+</head>
+<body>
+  <div>
+    <h1> this is my heading </h1>
+    <ul>
+      <li> this is my li </li>
+    </ul>
+    <p> this is my paragraph </p>
+  </div>
+</body>
+</html>
+```
 
 
 
