@@ -1,10 +1,21 @@
+var fs = require('fs');
 var _ = require('lodash');
 var through = require('through2');
 
-module.exports = function(object) {
-  through2(function(chunk, enc, done) {    
-    var compiled = _.template(chunk, object);
-    this.push(compiled)
-    return done();    
-  }));
+
+function lodashStreamer(object) {
+  if (!object || typeof object !== 'object') {
+    throw new Error('must provide an object to lodash');
+  }
+  var stream = through(function(chunk, enc, done) {    
+    if (chunk.isBuffer) {
+      this.emit('error', new Error('Buffers not supported'));
+    }
+    this.push(_.template(chunk, object))
+    done();    
+  });
+
+  return stream;
 }
+
+module.exports = lodashStreamer;
