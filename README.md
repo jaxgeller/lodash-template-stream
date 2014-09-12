@@ -77,4 +77,5 @@ fs.createReadStream('./template.html')
 ```
 
 
+[![forthebadge](http://forthebadge.com/badges/built-by-developers.svg)](http://forthebadge.com)
 
