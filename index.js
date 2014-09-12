@@ -11,7 +11,7 @@ function lodashStreamer(object) {
     if (chunk.isBuffer) {
       this.emit('error', new Error('Buffers not supported'));
     }
-    this.push(_.template(chunk, object))
+    this.push(_.template(chunk, object));
     done();    
   });
 

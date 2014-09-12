@@ -1,13 +1,13 @@
 {
   "name": "lodash-template-stream",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Compile templates with streams using lodash",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "@JaxGeller",
+  "license": "MIT",
   "dependencies": {
     "lodash": "^2.4.1",
     "through2": "^0.6.1"
